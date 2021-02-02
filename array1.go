@@ -2,23 +2,26 @@ package main
 
 import "fmt"
 
+//Package scope array definition
+var integerArray [5]int
+
+var stringArray [4]string
+
 func main() {
 
-	// Creating an array of string type
-	// Using var keyword
-	var myarr [4]string
+	integerArray[0] = 10
+	integerArray[1] = 20
+	integerArray[2] = 30
+	integerArray[3] = 40
+	integerArray[4] = 50
 
-	// Elements are assigned using index
-	myarr[0] = "My"
-	myarr[1] = "name"
-	myarr[2] = "is"
-	myarr[3] = "Himanshu"
+	fmt.Println("This is the integer Array: ", integerArray)
 
-	// Accessing the elements of the array
-	// Using index value
-	fmt.Println("Elements of Array:")
-	fmt.Println("Element 1: ", myarr[0])
-	fmt.Println("Element 2: ", myarr[1])
-	fmt.Println("Element 3: ", myarr[2])
-	fmt.Println("Element 3: ", myarr[3])
+	stringArray[0] = "first"
+	stringArray[1] = "second"
+	stringArray[2] = "third"
+	stringArray[3] = "fourth"
+
+	fmt.Println("This is the string array: ", stringArray)
+
 }
